@@ -20,3 +20,7 @@ Thumbs.db
 *.sch-bak
 *-save.pro
 *-save.kicad_pcb
+
+# Internal planning and specifications (never commit to remote)
+openspec/
+.openspec/

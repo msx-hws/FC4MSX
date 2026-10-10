@@ -36,7 +36,7 @@ An Interactive HTML BOM is provided at [bom/ibom.html](bom/ibom.html). Open it i
 | U1 | WD37C65 | DIP-40 (600 mil) | Floppy Disk Controller |
 | U2 | 74LS04 | DIP-14 (300 mil) | Hex inverter |
 | U3 | 74LS138 | DIP-16 (300 mil) | 3-to-8 decoder |
-| U4 | W27C512 | DIP-28 (600 mil) | TDC-600 MSX-DOS Disk ROM |
+| U4 | W27C512 | DIP-28 (600 mil) | TDC-600 MSX-DOS Disk ROM (see `rom/TDC600EN.ROM`) |
 | Y1 | 16 MHz | DIP-8 | Crystal oscillator |
 | J1 | MSX Edge | Card edge | Standard MSX 50-pin slot connector |
 | J2 | FDD Header | 2x17 pin header, 2.54 mm pitch | Standard 34-pin floppy interface |
@@ -47,6 +47,13 @@ An Interactive HTML BOM is provided at [bom/ibom.html](bom/ibom.html). Open it i
 | JP1–JP4 | Solder jumpers | 3-pad SMD | Solder bridge configuration pads |
 
 Using quality DIP sockets for U1, U2, U3, and U4 is recommended.
+
+## Disk ROM
+
+A ready-to-burn English Disk ROM binary is provided in the [rom](rom/) directory:
+- `rom/TDC600EN.ROM`: 64 KB binary for 27C512 / W27C512.
+
+For flashing instructions and incremental smoke testing (including using a simple cartridge ROM like *Antarctic Adventure* to verify the bus and ROM socket before final assembly), see [docs/ASSEMBLY.md](docs/ASSEMBLY.md).
 
 ## 3D Printed Cartridge Shell
 
@@ -78,6 +85,7 @@ fc4msx/
 ├── docs/           # Pinouts and assembly notes
 ├── gerbers/        # Production Gerber ZIP and drill files
 ├── images/         # PCB render previews
+├── rom/            # Disk ROM binary (TDC600EN.ROM)
 ├── LICENSE
 └── README.md
 ```
