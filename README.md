@@ -7,6 +7,16 @@
 
 ---
 
+## 📸 Hardware Previews
+
+| 3D Isometric View | Top View (Components) | Bottom View |
+| :---: | :---: | :---: |
+| ![FC4MSX 3D View](images/pcb-3d.png) | ![FC4MSX Top View](images/pcb-top.png) | ![FC4MSX Bottom View](images/pcb-bottom.png) |
+
+*(Cartridge enclosure photos/renders can be viewed in the [`3d-enclosure/`](3d-enclosure/) directory).*
+
+---
+
 ## ⚠️ License & Commercial Use Notice
 
 This project is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license.
