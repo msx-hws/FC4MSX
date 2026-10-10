@@ -2,6 +2,12 @@
 
 This folder contains the 3D-printable cartridge enclosure files for the FC4MSX floppy controller.
 
+## Photos
+
+| Front | Back | Top Cutout |
+| :---: | :---: | :---: |
+| ![Enclosure Front](../images/case_front.jpeg) | ![Enclosure Back](../images/case_back.jpeg) | ![Enclosure Top](../images/case_top.jpeg) |
+
 ## File Inventory
 - [**`FC4MSX-bottom.stl`**](FC4MSX-bottom.stl): Lower shell half with mounting standoffs and cartridge guide rails.
 - [**`FC4MSX-top.stl`**](FC4MSX-top.stl): Upper shell half with opening for the 34-pin floppy connector.
