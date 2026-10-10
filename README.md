@@ -65,14 +65,16 @@ You can order PCBs directly using the files in the [`gerbers/`](gerbers/) folder
 
 ## 🧰 Bill of Materials (BOM)
 
-A complete list of parts, part numbers, and footprints is available in [`bom/BOM.md`](bom/BOM.md).
+A complete list of parts, part numbers, and footprints is available in [`bom/BOM.md`](bom/BOM.md), as well as an interactive component locator in [`bom/ibom.html`](bom/ibom.html).
 
-Primary components typically include:
-- **FDC Controller IC** (e.g., Western Digital WD2793 / WD1770 / WD1772 or equivalent based on TDC-600 architecture)
-- **Glue Logic / Address Decoding:** 74xx-series logic ICs (74LS/HCT family)
-- **Disk ROM:** 27C256 / 28C256 or 27C128 / 27C512 EPROM/EEPROM with compatible MSX-DOS Disk ROM
-- **Floppy Connector:** Standard 34-pin 2.54mm dual-row box header
-- **Passives:** Electrolytic & ceramic decoupling capacitors (0.1µF), pull-up resistor networks, crystal oscillator
+### Key ICs & Components
+- **FDC Controller IC:** **WD37C65** (DIP-40)
+- **Disk ROM:** **W27C512** (DIP-28 EEPROM) programmed with TDC-600 compatible MSX-DOS Disk ROM
+- **Address Decoding / Logic:** **74LS138** (DIP-16) decoder & **74LS04** (DIP-14) hex inverter
+- **Oscillator:** **16 MHz** oscillator (DIP-8)
+- **Floppy Connector:** Standard 34-pin 2.54mm dual-row box header (J2)
+- **Edge Connector:** MSX Standard 50-Pin Gold Finger (J1)
+- **Passives:** 5x 100nF decoupling capacitors (C1–C5), 1x 22µF electrolytic filter (C6), 4x 150Ω resistors (R1–R4), 1x 1kΩ resistor (R5), and 4x solder jumpers (JP1–JP4)
 
 ---
 

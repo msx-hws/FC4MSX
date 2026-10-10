@@ -1,22 +1,32 @@
 # Bill of Materials (BOM) - FC4MSX
 
-This document lists the components required to assemble the FC4MSX floppy controller cartridge.
-
-| Designator | Description | Package / Footprint | Quantity | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| **U1** | Floppy Disk Controller (WD2793 / equivalent) | DIP-40 | 1 | Match TDC-600 controller architecture |
-| **U2** | Disk ROM (27C256 / 27C128 / 28C256) | DIP-28 | 1 | Programmed with TDC-600 compatible MSX-DOS Disk ROM |
-| **U3..Ux** | Glue Logic ICs (74LS / 74HCT series) | DIP-14 / DIP-16 / DIP-20 | As per schematic | Standard TTL / HCT logic |
-| **Y1** | Crystal / Oscillator | HC-49S or DIP-4 / DIP-8 | 1 | Typically 4 MHz / 8 MHz / 16 MHz per design |
-| **J1** | 34-Pin Shrouded IDC Header (FDD connector) | 2x17 pin 2.54mm pitch | 1 | Keyed box header recommended |
-| **C_dec** | Decoupling Capacitors (100nF / 0.1µF) | Ceramic 2.54mm pitch | ~6-10 | One per IC power pin |
-| **C_bulk**| Bulk Filter Capacitor (10µF - 47µF, 16V+) | Radial Electrolytic | 1-2 | Near power input rails |
-| **R_pull**| Pull-up Resistors / Resistor Network | SIP-9 / SIP-10 or 1/4W Through-hole | Various | ~1kΩ - 4.7kΩ for bus pull-ups & floppy signals |
-| **LED1**  | Activity / Power LED (Optional) | 3mm Through-hole | 1 | Green / Amber / Red |
-| **R_led** | Current-limiting Resistor for LED | 0.25W Through-hole (330Ω - 1kΩ) | 1 | |
+Interactive BOM is available at: [**`bom/ibom.html`**](ibom.html) (open directly in any modern web browser for an interactive PCB placement visualizer and component checklist).
 
 ---
 
-### Sockets & Hardware
-- **DIP Sockets:** High-quality machined (round-pin) or dual-wipe DIP sockets are strongly recommended for the FDC IC (DIP-40) and ROM (DIP-28) to allow easy swapping/testing.
-- **Enclosure Fasteners:** M2 / M2.5 self-tapping or countersunk machine screws (check `3d-enclosure/README.md` for exact length).
+## Component List
+
+| Reference | Value / Part | Description | Package / Footprint | Qty |
+| :--- | :--- | :--- | :--- | :---: |
+| **U1** | **WD37C65** | Floppy Disk Controller (WD37C65 / compatible) | DIP-40 (600mil / 15.24mm) | 1 |
+| **U2** | **74LS04** | Hex Inverter | DIP-14 (300mil / 7.62mm) | 1 |
+| **U3** | **74LS138** | 3-to-8 Line Decoder / Demultiplexer | DIP-16 (300mil / 7.62mm) | 1 |
+| **U4** | **W27C512** | 64K x 8 EEPROM / EPROM (MSX Disk ROM) | DIP-28 (600mil / 15.24mm) | 1 |
+| **Y1** | **16 MHz** | Crystal Oscillator | DIP-8 (Full-size / Half-size footprint) | 1 |
+| **C1, C2, C3, C4, C5** | **100nF (0.1µF)** | Decoupling Capacitors (Ceramic) | THT Disc (Lead Pitch 2.50mm) | 5 |
+| **C6** | **22µF** | Electrolytic Filter Capacitor (16V+) | Radial (Lead Pitch 2.00mm, Dia 5.0mm) | 1 |
+| **R1, R2, R3, R4** | **150 Ω** | Resistors (1/4W 5%) | Axial DIN0207 (Pitch 10.16mm) | 4 |
+| **R5** | **1 kΩ** | Resistor (1/4W 5%) | Axial DIN0207 (Pitch 10.16mm) | 1 |
+| **JP1, JP2, JP3, JP4** | **Solder Jumpers** | 3-way Solder Jumpers (Open) | SMD Solder Jumper 3-pad | 4 |
+| **J1** | **MSX Cartridge** | 50-Pin MSX Cartridge Edge Connector | PCB Gold Fingers (Integrated) | 1 |
+| **J2** | **FDD Connector** | 34-Pin (2x17) Floppy Header, 2.54mm pitch | Vertical Pin Header / Boxed Shrouded | 1 |
+
+---
+
+## Recommended Sockets & Hardware
+- **DIP-40 Socket:** 1x 40-pin 600mil socket (for U1 - WD37C65)
+- **DIP-28 Socket:** 1x 28-pin 600mil socket (for U4 - W27C512)
+- **DIP-16 Socket:** 1x 16-pin 300mil socket (for U3 - 74LS138)
+- **DIP-14 Socket:** 1x 14-pin 300mil socket (for U2 - 74LS04)
+- **DIP-8 Socket:** 1x 8-pin socket (optional, for Y1 oscillator)
+- **Enclosure Screws:** 2x or 4x M2.5 / M2 screws (see `3d-enclosure/README.md`)
