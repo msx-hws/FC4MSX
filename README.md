@@ -93,6 +93,7 @@ fc4msx/
 ## Credits
 
 - Architecture based on the Talent TDC-600 disk controller.
+- MSXmakers for their work on modern TDC-600 adaptations and testing notes.
 - Thanks to the MSX Resource Center community for hardware documentation and Disk ROM preservation.
 
 ## License
