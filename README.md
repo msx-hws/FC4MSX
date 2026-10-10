@@ -29,7 +29,10 @@ Recommended fabrication parameters:
 
 ## Bill of Materials
 
-An Interactive HTML BOM is provided at [bom/ibom.html](bom/ibom.html). Open it in any browser to inspect component placements on the PCB.
+An Interactive BOM is hosted online at:
+👉 [**Open Interactive BOM (Live PCB Viewer)**](https://msx-hws.github.io/FC4MSX/bom/ibom.html)
+
+You can also view it locally by opening [bom/ibom.html](bom/ibom.html) in any web browser.
 
 | Ref | Value / Part | Footprint | Notes |
 | :--- | :--- | :--- | :--- |
