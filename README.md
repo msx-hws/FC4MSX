@@ -4,9 +4,13 @@ Floppy Disk Controller cartridge for MSX computers based on the Talent TDC-600 d
 
 ## Previews
 
-| 3D View | Top | Bottom |
+| Assembled Case | Bare PCB (Front) | Bare PCB (Back) |
 | :---: | :---: | :---: |
-| ![FC4MSX 3D View](images/pcb-3d.png) | ![FC4MSX Top View](images/pcb-top.png) | ![FC4MSX Bottom View](images/pcb-bottom.png) |
+| ![FC4MSX Case](images/case_front.jpeg) | ![FC4MSX PCB Front](images/pcb_front.jpeg) | ![FC4MSX PCB Back](images/pcb_back.jpeg) |
+
+| Top Connector Cutout | Case Back | 3D Render |
+| :---: | :---: | :---: |
+| ![FC4MSX Top](images/case_top.jpeg) | ![FC4MSX Case Back](images/case_back.jpeg) | ![FC4MSX 3D View](images/pcb-3d.png) |
 
 ## Features
 
