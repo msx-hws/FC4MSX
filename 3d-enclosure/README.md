@@ -6,7 +6,7 @@ This folder contains the 3D-printable cartridge enclosure files for the FC4MSX f
 
 | Front | Back | Top Cutout |
 | :---: | :---: | :---: |
-| ![Enclosure Front](../images/case_front.jpeg) | ![Enclosure Back](../images/case_back.jpeg) | ![Enclosure Top](../images/case_top.jpeg) |
+| ![Enclosure Front](../images/case_front_nobg.png) | ![Enclosure Back](../images/case_back_nobg.png) | ![Enclosure Top](../images/case_top_nobg.png) |
 
 ## File Inventory
 - [**`FC4MSX-bottom.stl`**](FC4MSX-bottom.stl): Lower shell half with mounting standoffs and cartridge guide rails.

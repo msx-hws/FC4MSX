@@ -6,7 +6,7 @@ This directory contains the production-ready Gerber and NC drill files for manuf
 
 | Component Side (Front) | Solder Side (Back) |
 | :---: | :---: |
-| ![PCB Front](../images/pcb_front.jpeg) | ![PCB Back](../images/pcb_back.jpeg) |
+| ![PCB Front](../images/pcb_front_nobg.png) | ![PCB Back](../images/pcb_back_nobg.png) |
 
 ## Instant Order ZIP Package
 - **[`FC4MSX-Gerbers-v1.0.3.zip`](FC4MSX-Gerbers-v1.0.3.zip)**: Pre-packaged archive ready for upload to PCB manufacturers (JLCPCB, PCBWay, AISLER, etc.).
