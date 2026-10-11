@@ -34,20 +34,20 @@ An Interactive BOM is hosted online at:
 
 You can also view it locally by opening [bom/ibom.html](bom/ibom.html) in any web browser.
 
-| Ref | Value / Part | Footprint | Notes |
-| :--- | :--- | :--- | :--- |
-| U1 | WD37C65 | DIP-40 (600 mil) | Floppy Disk Controller |
-| U2 | 74LS04 | DIP-14 (300 mil) | Hex inverter |
-| U3 | 74LS138 | DIP-16 (300 mil) | 3-to-8 decoder |
-| U4 | W27C512 | DIP-28 (600 mil) | TDC-600 MSX-DOS Disk ROM (see `rom/TDC600EN.ROM`) |
-| Y1 | 16 MHz | DIP-8 | Crystal oscillator |
-| J1 | MSX Edge | Card edge | Standard MSX 50-pin slot connector |
-| J2 | FDD Header | 2x17 pin header, 2.54 mm pitch | Standard 34-pin floppy interface |
-| C1–C5 | 100 nF | 2.5 mm pitch | Ceramic decoupling capacitors |
-| C6 | 22 µF | Radial, 2.0 mm pitch, 5 mm dia | Electrolytic capacitor (16V+) |
-| R1–R4 | 150 Ω | Axial DIN0207 | Pull-up resistors |
-| R5 | 1 kΩ | Axial DIN0207 | Resistor |
-| JP1–JP4 | Solder jumpers | 3-pad SMD | Solder bridge configuration pads |
+| Ref | Value / Part | Qty | Footprint | Notes |
+| :--- | :--- | :---: | :--- | :--- |
+| U1 | WD37C65 | 1 | DIP-40 (600 mil) | Floppy Disk Controller |
+| U2 | 74LS04 | 1 | DIP-14 (300 mil) | Hex inverter |
+| U3 | 74LS138 | 1 | DIP-16 (300 mil) | 3-to-8 decoder |
+| U4 | W27C512 | 1 | DIP-28 (600 mil) | TDC-600 MSX-DOS Disk ROM (see `rom/TDC600EN.ROM`) |
+| Y1 | 16 MHz | 1 | DIP-8 | Crystal oscillator |
+| J1 | MSX Edge | 1 | Card edge | Standard MSX 50-pin slot connector |
+| J2 | FDD Header | 1 | 2x17 pin header, 2.54 mm pitch | Standard 34-pin floppy interface |
+| C1–C5 | 100 nF | 5 | 2.5 mm pitch | Ceramic decoupling capacitors |
+| C6 | 22 µF | 1 | Radial, 2.0 mm pitch, 5 mm dia | Electrolytic capacitor (16V+) |
+| R1–R4 | 150 Ω | 4 | Axial DIN0207 | Pull-up resistors |
+| R5 | 1 kΩ | 1 | Axial DIN0207 | Resistor |
+| JP1–JP4 | Solder jumpers | 4 | 3-pad SMD | Solder bridge configuration pads |
 
 Using quality DIP sockets for U1, U2, U3, and U4 is recommended.
 
